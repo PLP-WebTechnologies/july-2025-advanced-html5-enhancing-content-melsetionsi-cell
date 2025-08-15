@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Demo</title>
+    <style>
+        /* General reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header */
+        .site-header {
+            background-color: #4a90e2;
+            color: white;
+            padding: 20px;
+            border-bottom: 5px solid #357ab8;
+        }
+
+        .site-header h1 {
+            margin-bottom: 10px;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-list a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border: 2px solid transparent;
+        }
+
+        .nav-list a:hover {
+            border-color: white;
+            border-radius: 5px;
+        }
+
+        /* Intro section */
+        .intro {
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+            border: 3px solid #ccc;
+            border-radius: 8px;
+        }
+
+        .primary-btn {
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin-top: 15px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .primary-btn:hover {
+            background-color: #357ab8;
+        }
+
+        /* Cards section */
+        .cards {
+            display: flex;
+            gap: 20px;
+            margin: 20px;
+        }
+
+        .card {
+            background-color: #e2f0d9;
+            border: 3px solid #88b04b;
+            padding: 15px;
+            flex: 1;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        .site-footer {
+            background-color: #4a90e2;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            border-top: 5px solid #357ab8;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="site-header">
+        <h1>My Box Model Playground</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <h2>Welcome!</h2>
+        <p>
+            This page demonstrates the CSS Box Model: margins, borders, and padding.
+            By giving each section its own background color, we can clearly see where 
+            content begins and ends.
+        </p>
+        <button class="primary-btn">Learn More</button>
+    </section>
+
+    <section class="cards">
+        <div class="card">
+            <h3>Card One</h3>
+            <p>Padding creates space inside the border. Margins create space outside the border.</p>
+        </div>
+        <div class="card">
+            <h3>Card Two</h3>
+            <p>Borders are easy to see when you give them color and thickness.</p>
+        </div>
+        <div class="card">
+            <h3>Card Three</h3>
+            <p>Experiment with values to see how elements shift and resize.</p>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 My CSS Experiments</p>
+    </footer>
+
+</body>
+</html>
